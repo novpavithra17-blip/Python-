@@ -185,63 +185,7 @@ o/p:
 564
 not armstrong
 
-17.
-n=int(input())
-s=n*n
-if str(s).endswith(str(n)):
- print("Automarphic")
-else:
- print("Not Automarphic")
-o/p:
-25
-Automarphic
 
-18.
-n = int(input())
-square = n ** 2  
-temp = square
-total = 0
-while temp > 0:
-    digit = temp % 10
-    total += digit
-    temp //= 10  
-if total == n:
-    print("neon number")
-else:
-    print("not neon number")
-o/p:
-9
-neon number
-
-19.
-n=int(input())
-total=0
-for i in range(1,n):
- if n%i==0:
-  total+=i
-if total==n and n>0:
- print("Perfect number")
-else:
- print("Not Perfect number")
-o/p:
-65
-Not Perfect number
-
-20.
-n=int(input())
-temp=n
-reverse_num=0
-while temp>0:
- digit=temp%10
- reverse_num=(reverse_num*10)+digit
- temp//=10
-if reverse_num==n:
- print("Palindrome number")
-else:
- print("Not Palindrome number")
-o/p:
-2442
-Palindrome number
 
 
 
