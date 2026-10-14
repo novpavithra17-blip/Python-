@@ -169,4 +169,20 @@ o/p:
 a is mixed
 
 16.
+n=int(input())
+temp=n
+power=len(str(n))
+total=0
+while temp>0:
+ digit=temp%10
+ total+=digit**power
+ temp//=10
+if total==n:
+ print("armstrong")
+else:
+ print("not armstrong")
+o/p:
+564
+not armstrong
+
 
