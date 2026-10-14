@@ -185,4 +185,16 @@ o/p:
 564
 not armstrong
 
+17.
+n=int(input())
+s=n*n
+if str(s).endswith(str(n)):
+ print("Automarphic")
+else:
+ print("Not Automarphic")
+o/p:
+25
+Automarphic
+
+
 
