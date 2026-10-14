@@ -227,5 +227,21 @@ o/p:
 65
 Not Perfect number
 
+20.
+n=int(input())
+temp=n
+reverse_num=0
+while temp>0:
+ digit=temp%10
+ reverse_num=(reverse_num*10)+digit
+ temp//=10
+if reverse_num==n:
+ print("Palindrome number")
+else:
+ print("Not Palindrome number")
+o/p:
+2442
+Palindrome number
+
 
 
