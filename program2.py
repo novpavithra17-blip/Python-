@@ -172,4 +172,22 @@ o/p:
 28
 Perfect number
 
+15.
+n=int(input())
+square=n**2
+temp=square
+total=0
+while temp>0:
+  digit=temp%10
+  total+=digit
+  temp//=10
+if total==n:
+  print("neon number")
+else:
+  print("not neon number")
+o/p:
+9
+neon number
+
+
 
