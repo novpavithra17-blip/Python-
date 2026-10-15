@@ -205,6 +205,51 @@ o/p:
    ***
     *
 
+17.
+n=int(input("Enter a number:"))
+temp=n
+total=0
+while temp>0:
+  digit=temp%10
+  fact=1
+  for i in range(1,digit + 1):
+    fact*=i
+  total+=fact
+  temp//=10
+if total==n:
+  print("Peterson number")
+else:
+  print("Not a peterson number")
+o/p:
+Enter a number:145
+Peterson number
 
+18.
+n=input("Enetr a number:")
+if n[0]!='0' and '0' in n:
+  print("Duck number")
+else:
+  print("Not a Duck number")
+o/p:
+Enetr a number:0980
+Not a Duck number
+
+19.
+n=int(input("Enetr a number:"))
+temp=n
+while temp!=1 and temp!=4:
+  total=0
+  while temp>0:
+    digit=temp%10
+    total+=digit*digit
+    temp//=10
+  temp=total
+if temp==1:
+  print("Happy number")
+else:
+  print("Not a Happy number")
+o/p:
+Enetr a number:7
+Happy number
 
 
