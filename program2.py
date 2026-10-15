@@ -131,3 +131,45 @@ o/p:
 Enter the number:5
 Prime
 
+12.
+n=int(input())
+s=n*n
+if str(s).endswith(str(n)):
+  print("Automarphic")
+else:
+  print("Not Automarphic")
+o/p:
+56
+Not Automarphic
+
+13.
+n=int(input())
+temp=n
+reverse_num=0
+while temp>0:
+ digit=temp%10
+ reverse_num=(reverse_num*10)+digit
+ temp//=10
+if reverse_num==n:
+ print("Palindrome number")
+else:
+ print("Not Palindrome number")
+o/p:
+454
+Palindrome number
+
+14.
+n=int(input())
+total=0
+for i in range(1,n):
+ if n%i==0:
+  total+=i
+if total==n and n>0:
+ print("Perfect number")
+else:
+ print("Not Perfect number")
+o/p:
+28
+Perfect number
+
+
